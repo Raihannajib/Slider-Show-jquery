@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="owl.carousel.css">
+    <link rel="stylesheet" href="owl.carousel.min.css">
+    <link rel="stylesheet" href="owl.theme.default.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BOUTICA</title>
+</head>
+<body>
+    <div id="wrapper" >
+        <div id="slider-area" class="owl-carousel">
+               <div class="owl-item"><img src="images/first.jpg" alt="" ></div>
+                <div class="owl-item"><img src="images/second.jpg" alt="" ></div>
+                <div class="owl-item"><img src="images/third.jpg" alt="" ></div>
+        </div>
+
+    <div id="nav-area">
+        <div class="nav">
+            <a href="#">Home  <span></span><span></span><span></span><span></span></a>
+            <a href="#">Products   <span></span><span></span><span></span><span></span></a>
+            <a href="#">About  <span></span><span></span><span></span><span></span></a>
+            <a href="#">Contact  <span></span><span></span><span></span><span></span></a>
+        </div>
+
+    </div>
+    
+    <div class="slider-text">
+        <h2>Welcome in BOUTICA </h2>
+        <p>WE LOVE SHOPPING</p>
+        <button onclick="window.location.href = '';">Contact Us <span></span><span></span><span></span><span></span></button>
+    </div> 
+    </div>
+
+ <script>
+    
+    //################# using slideshow jquery code owlcarousel ###########################################
+      $(document).ready(function(){
+        $('#slider-area').owlCarousel({
+    loop:true,
+    autoplay:true,
+    navigation : true,
+   
+    responsive:{
+        0:{
+            items:1
+        },
+        200:{
+            items:1
+        },
+        200:{
+            items:1
+        }
+    }
+});
+        }); 
+
+//######################## aiutomatic slideShow using javascript######################""
+    /*
+
+         var slideIndex = 0;
+
+          function showSlides() {
+         var i;
+         var slides = document.getElementsByClassName("owl-item");
+                 for (i = 0; i < slides.length; i++) {
+                           slides[i].style.display = "none";  
+                                       }
+         slideIndex++;
+         if (slideIndex > slides.length) {    //slide.length = 3 , 1 slide show => ( slideIndex = 1)
+             slideIndex = 1
+            }   
+
+
+      
+       
+       showSlides();
+       slides[slideIndex-1].style.display = "block";  
+       setTimeout(showSlides, 2000); // Change image every 2 seconds
+
+      
+}
+*/
+
+    </script>
+</body>
+</html>
